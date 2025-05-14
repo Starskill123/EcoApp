@@ -12,7 +12,7 @@ pip install gigachat icrawler
 ```
 После этого Вам необходимо изменить директорию в файле app.py на ту, куда будут сохранятся фотографии
 ```
-5 image_dir = 'C:/Users/slava/PycharmProjects/EcoApp/image'  #Директория куда сохраняются изображения
+image_dir = 'C:/Users/slava/PycharmProjects/EcoApp/image'  #Директория куда сохраняются изображения
 ```
 конечная папка **обязательно** должна называтся image
 
