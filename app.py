@@ -6,8 +6,8 @@ from telebot.types import ReplyKeyboardMarkup
 from icrawler.builtin import BingImageCrawler
 import os
 
-bot = telebot.TeleBot('6713241033:AAGWIvJfcbOHfuhEo421zwu4pLxz4qPyUe0')
-key = 'ZDljODAxNGMtMGIxZC00NDM4LTljMTYtNjJkOTI4ODUxMjI0OjNjOTFmZTJlLTQzZTUtNDVlYi04YmI2LTdiNGUyZGE0NTQ3ZA=='  # Ключ нейросети
+bot = telebot.TeleBot('токен телеграм бота')
+key = 'токен gigachat'  # Ключ нейросети
 
 image_dir = '~/home/EcoApp/image'
 
