@@ -9,7 +9,7 @@ import os
 bot = telebot.TeleBot('токен телеграм бота')
 key = 'токен gigachat'  # Ключ нейросети
 
-image_dir = '~/home/EcoApp/image'
+image_dir = 'Директория/image'
 
 default_message = '''Ты Экологический ассистент
 Основная задача: предоставление точной и актуальной информации по вопросам биологии, экологии и охраны окружающей среды.
@@ -43,8 +43,6 @@ default_message = '''Ты Экологический ассистент
 Информация о сезонных изменениях в природе
 Данные о влиянии человеческой деятельности на экосистемы
 Важно: при отсутствии точной информации необходимо указывать на необходимость проверки данных у специалистов или проведения дополнительных исследований.'''
-
-
 
 
 # Обработчики команд
@@ -139,11 +137,12 @@ def get_random_question():
     n = random.randint(1, count_questions)  # Случайный выбор вопроса
     question_data = [
         questions_sheet[f'A{n}'].value,  # Вопрос
-        questions_sheet[f'B{n}'].value,  # Вариант 1
-        questions_sheet[f'C{n}'].value,  # Вариант 2
-        questions_sheet[f'D{n}'].value,  # Вариант 3
+        str(questions_sheet[f'B{n}'].value).strip(),  # Вариант 1
+        str(questions_sheet[f'C{n}'].value).strip(),  # Вариант 2
+        str(questions_sheet[f'D{n}'].value).strip(),  # Вариант 3
         int(questions_sheet[f'E{n}'].value)  # Номер верного ответа (преобразуем в int)
     ]
+    print(question_data)
     return question_data
 
 
